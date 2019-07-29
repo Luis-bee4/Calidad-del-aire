@@ -73,5 +73,5 @@ if __name__ == "__main__":
 	while True:
 		main()
 		print("\nEjecutando prueba",datetime.datetime.now())
-		time.sleep(5)
+		time.sleep(3600)
 
