@@ -85,8 +85,6 @@ class Main:
             file.write(json.dumps(tweets))
 
         return
-
-
 def main(keyword_list="./heal.list", keyword=False):
     print("Starting...")
 
@@ -104,18 +102,6 @@ def main(keyword_list="./heal.list", keyword=False):
         main_obj.search_and_save(curr_keyword, radius="150km")
 
     print("Done")
-
-# class bcolors from https://stackoverflow.com/questions/287871/how-to-print-colored-text-in-terminal-in-python
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-
 if __name__ == "__main__":
 	while True:
 		main()
